@@ -1,0 +1,153 @@
+* {
+    color: white;
+}
+
+body {
+    background-color: rgba(3,18,61);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px;
+}
+
+body > h1, h2 {
+    text-align: center;
+}
+
+p {
+    text-indent: 30px;
+}
+
+header {
+    margin: 0px 0px 70px 0px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(1, 16, 54);
+    border-radius: 0px 0px 5px 5px;
+    box-shadow: 1px 0px 50px black;
+}
+
+    /* Remove as setinhas no Chrome, Edge e Safari */
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+
+/* Remove as setinhas no Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.box {
+    transition: 0.50s;
+    margin: auto;
+    background-color: rgb(11, 156, 192);
+    box-shadow: 0px 0px 30px aqua;
+    padding: 30px;
+    width: 80%;
+    border-radius: 10px;
+}
+
+.box > #tamanho {
+    text-align: center;
+}
+
+.box > #button {
+    display: none;
+    margin: auto;
+}
+
+.conteudo2 {
+    transition: 0.50s;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    border: 3px dashed white;
+    background-color: rgba(3,18,61);
+    border-radius: 10px;
+    font-size: 0.7em;
+}
+
+.conteudo2:hover {
+    background-color: rgb(1, 15, 53);
+}
+
+.conteudo2 svg {
+    display: block;
+    margin: auto;
+}
+
+.box:hover {
+    transition: 0.50s;
+    scale: 1.01;
+    box-shadow: 0px 0px 50px aqua;
+}
+
+.button {
+    transition: 0.60s;
+    border: 1px solid rgba(0, 0, 0, 0.37);
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: rgba(1, 24, 155, 0.555);
+    background-image: radial-gradient(circle, blue, transparent);
+    box-shadow: 0px 0px 50px rgb(3, 3, 104);
+    cursor: pointer;
+}
+
+#conteudo1 > .button {
+    display: block;
+    margin: auto;
+}
+
+.button:hover {
+    transition: 0.60s;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    scale: 1.001;
+    background-color: blue;
+}
+
+#button {
+    display: none;
+    transition: 0.60s;
+    border: 1px solid rgba(0, 0, 0, 0.37);
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: rgba(1, 24, 155, 0.555);
+    background-image: radial-gradient(circle, blue, transparent);
+    box-shadow: 0px 0px 50px rgb(3, 3, 104);
+    cursor: pointer;
+}
+
+#button:hover {
+    transition: 0.60s;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    scale: 1.001;
+    background-color: blue;
+}
+
+.input {
+    outline: none;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid white;
+    cursor: pointer;
+    min-width: 30px;
+    max-width: 50px;
+    background-color: transparent;
+}
+
+#upload {
+    transition: 3s;
+    border: 1px solid rgba(0, 0, 0, 0.37);
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: rgba(2, 15, 87, 0.555);
+    cursor: pointer;
+}
+
+.tamanho {
+    display: inline-block;
+    margin: 10px 5%;
+}

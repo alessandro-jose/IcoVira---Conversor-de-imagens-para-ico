@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="IcoVira - Converta imagens PNG, JPG, WEBP e SVG para ícones .ICO do Windows grátis e 100% offline no navegador. Rápido, seguro e sem enviar seus arquivos.">
+    <link rel="shortcut icon" href="imagens/favicom.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>IcoVira - Conversor imagens para ICO Offline</title>
+  </head>
+  <body>
+    <header>
+      <img src="imagens/favicom.ico" alt="logo do site" style="border-radius: 10px; width: 50px; margin-right: 10px;">
+      <span>IcoVira - Conversor de imagens para ICO</span>
+    </header>
+    <div class="box">
+
+      <div id="conteudo1">
+        <h2>Conversor de imagens para .ICO</h2>
+        <p>Aqui você converte a uma imagem para .ICO, e todo o trabalho é feito no seu própio computador, ou seja, os arquivos não saem para outro lugar, caso deseje ver o codigo ele estará todo disponibilizado em <a href="https://github.com/alessandro-jose/IcoVira---Conversor-de-imagens-para-ico">https://github.com/alessandro-jose/IcoVira---Conversor-de-imagens-para-ico</a> ,o conversor transforma as imagens em .ico nos seguintes formatos: PNG; JPG/JPEG; WEBP; GIF; SVG; BMP e ICO</p>
+        <button class="button" onclick="paraoconversor()">Ir para o Conversor</button>
+      </div>
+
+      <input type="file" id="realFile" accept="image/*" hidden>
+
+      <div class="conteudo2" id="uploads" style="display: none;">
+
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="3" y="3" width="18" height="18" rx="3" ry="3"></rect>
+        <circle cx="15.5" cy="8.5" r="1.5"></circle>
+        <polyline points="3 16 8 11 13 16"></polyline>
+        <polyline points="11 14 15 10 21 16"></polyline>
+      </svg>
+
+ 
+        <h2>Solte as imagens aqui</h2><br>
+        <span id="fileName">ou clique para abrir o explorador de arquivos do seu Sistema Operacional</span>
+      </div>
+
+      <div id="tamanho" style="display: none;">
+        <h2>Qual tamanho que você deseja</h2>
+
+        <div class="tamanho">
+          <label for="width">Largura</label>
+          <input type="number" id="width" class="input" name="1" value="256">
+        </div>
+
+        <div class="tamanho">
+          <label for="height">Altura</label>
+          <input type="number" id="height" class="input" name="1" value="256">
+        </div>
+      </div>
+
+      <button onclick="converter()" id="button">Gerar e Baixar .ICO</button>
+
+
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
