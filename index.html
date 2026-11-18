@@ -9,15 +9,19 @@
     <title>IcoVira - Conversor imagens para ICO Offline</title>
   </head>
   <body>
-    <header>
-      <img src="imagens/favicom.ico" alt="logo do site" style="border-radius: 10px; width: 50px; margin-right: 10px;">
-      <span>IcoVira - Conversor de imagens para ICO</span>
+    <header id="header">
+      <img src="imagens/favicom.ico" alt="logo do site" style="" id="logo">
+      <h1>IcoVira</h1>
     </header>
     <div class="box">
 
       <div id="conteudo1">
         <h2>Conversor de imagens para .ICO</h2>
+<<<<<<< Updated upstream
         <p>Aqui você converte a uma imagem para .ICO, e todo o trabalho é feito no seu própio computador, ou seja, os arquivos não saem para outro lugar, caso deseje ver o codigo ele estará todo disponibilizado em <a href="https://github.com/alessandro-jose/icovira-conversor-de-imagens-para-ico">https://github.com/alessandro-jose/icovira-conversor-de-imagens-para-ico</a> ,o conversor transforma as imagens em .ico nos seguintes formatos: PNG; JPG/JPEG; WEBP; GIF; SVG; BMP e ICO</p>
+=======
+        <p>Aqui você converte a uma imagem para .ICO, e todo o trabalho é feito no seu própio computador, ou seja, os arquivos não saem para outro lugar, caso deseje ver o codigo ele estará todo disponibilizado em <a href="https://github.com/alessandro-jose/IcoVira---Conversor-de-imagens-para-ico" target="_blank">https://github.com/alessandro-jose/IcoVira---Conversor-de-imagens-para-ico</a> ,o conversor transforma as imagens em .ico nos seguintes formatos: PNG; JPG/JPEG; WEBP; GIF; SVG; BMP e ICO</p>
+>>>>>>> Stashed changes
         <button class="button" onclick="paraoconversor()">Ir para o Conversor</button>
       </div>
 
@@ -38,15 +42,15 @@
       </div>
 
       <div id="tamanho" style="display: none;">
-        <h2>Qual tamanho que você deseja</h2>
+        <h2 class="qualtamanho">Qual tamanho que você deseja</h2>
 
         <div class="tamanho">
-          <label for="width">Largura</label>
+          <label for="width" class="pinput">Largura</label>
           <input type="number" id="width" class="input" name="1" value="256">
         </div>
 
         <div class="tamanho">
-          <label for="height">Altura</label>
+          <label for="height" class="pinput">Altura</label>
           <input type="number" id="height" class="input" name="1" value="256">
         </div>
       </div>

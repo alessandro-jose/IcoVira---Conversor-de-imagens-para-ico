@@ -5,7 +5,7 @@
 body {
     background-color: rgba(3,18,61);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0px;
+    margin: 0px 0px 10px 0px;
 }
 
 body > h1, h2 {
@@ -13,7 +13,7 @@ body > h1, h2 {
 }
 
 p {
-    text-indent: 30px;
+    text-indent: 10px;
 }
 
 header {
@@ -24,6 +24,12 @@ header {
     background-color: rgb(1, 16, 54);
     border-radius: 0px 0px 5px 5px;
     box-shadow: 1px 0px 50px black;
+}
+
+#logo {
+    border-radius: 10px; 
+    width: 50px; 
+    margin-right: 10px;
 }
 
     /* Remove as setinhas no Chrome, Edge e Safari */
@@ -38,6 +44,9 @@ input[type=number] {
 }
 
 .box {
+    box-sizing: border-box;
+    overflow-wrap: anywhere;
+    word-break: break-word;
     transition: 0.50s;
     margin: auto;
     background-color: rgb(11, 156, 192);
@@ -45,6 +54,10 @@ input[type=number] {
     padding: 30px;
     width: 80%;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
 }
 
 .box > #tamanho {
@@ -64,16 +77,10 @@ input[type=number] {
     border: 3px dashed white;
     background-color: rgba(3,18,61);
     border-radius: 10px;
-    font-size: 0.7em;
 }
 
 .conteudo2:hover {
     background-color: rgb(1, 15, 53);
-}
-
-.conteudo2 svg {
-    display: block;
-    margin: auto;
 }
 
 .box:hover {
@@ -150,4 +157,44 @@ input[type=number] {
 .tamanho {
     display: inline-block;
     margin: 10px 5%;
+}
+
+@media screen and (max-width: 296px) {
+
+    #header {
+        font-size: 0.5em;
+    }
+
+    #logo {
+        width: 40px;
+    }
+
+    #conteudo1 {
+        font-size: 0.5em;
+    }
+
+    .conteudo2 {
+        font-size: 0.4em;
+    }
+
+    .qualtamanho {
+        font-size: 0.9em;
+    }
+
+    .tamanho {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .pinput {
+        font-size: 0.7em;
+    }
+
+    input {
+        font-size: 0.7em;
+    }
+
+    body button {
+        font-size: 0.5em;
+    }
 }

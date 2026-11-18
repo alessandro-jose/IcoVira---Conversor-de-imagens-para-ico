@@ -21,22 +21,26 @@ btnUpload.addEventListener('click', () => {
 // Quando um arquivo for escolhido no Explorer
 realFile.addEventListener('change', () => {
     const file = realFile.files[0];
-    // Verifica se o tipo do arquivo começa com "image/"
-    if (!file.type.startsWith('image/')) {
-    alert('Formato inválido! Por favor, selecione apenas arquivos de imagem.');
-    realFile.value = ''; // Limpa o input
-    return; // Para a execução aqui
-    }
 
-    if (file) {
-    document.getElementById('button').style.display = 'block'
-    fileNameSpan.textContent = file.name;
-    divTamanho.style.display = 'block';
-    } else {
-    fileNameSpan.textContent = 'Nenhum arquivo escolhido';
-    divTamanho.style.display = 'none';
-    document.getElementById('button').style.display = 'none'
+    if (realFile.files[0] !== undefined) {
+        if (!file.type.startsWith('image/')) {
+            alert('Formato inválido! Por favor, selecione apenas arquivos de imagem.');
+            realFile.value = ''; // Limpa o input
+            return; // Para a execução aqui
+        }
+
+        if (file) {
+            document.getElementById('button').style.display = 'block'
+            fileNameSpan.textContent = file.name;
+            divTamanho.style.display = 'block';
+        } else {
+            fileNameSpan.textContent = 'Nenhum arquivo escolhido';
+            divTamanho.style.display = 'none';
+            document.getElementById('button').style.display = 'none'
+        }
     }
+    // Verifica se o tipo do arquivo começa com "image/"
+
 });
 
     btnUpload.addEventListener('dragover', (e) => {
