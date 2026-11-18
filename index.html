@@ -10,56 +10,58 @@
   </head>
   <body>
     <header id="header">
-      <img src="imagens/favicom.ico" alt="logo do site" style="" id="logo">
+      <img src="imagens/favicom.ico" alt="logo do site" id="logo">
       <h1>IcoVira</h1>
     </header>
-    <div class="box">
+    <main>
+      <section class="box">
+        <section id="conteudo1">
+          <h2>Conversor de imagens para .ICO</h2>
+          <p>Converta suas imagens para o formato .ICO de forma rápida e segura. Todo o processamento é feito diretamente no seu navegador, garantindo que seus arquivos nunca saiam do seu computador. <br>
+          <strong>Formatos aceitos</strong>: PNG, JPG/JPEG, WEBP, GIF, SVG, BMP e ICO. <br>
+          Projeto de código aberto disponível em <a href="https://github.com/alessandro-jose/icovira-conversor-de-imagens-para-ico" target="_blank">https://github.com/alessandro-jose/icovira-conversor-de-imagens-para-ico</a>.
+          </p>
+          <button class="button" onclick="paraoconversor()">Ir para o Conversor</button>
+        </section>
+        <input type="file" id="realFile" accept="image/*" hidden>
+        <section class="conteudo2" id="uploads" style="display: none;">
+          <div>
+            <img src="#" alt="imagem do arquivo" id="imagem" style="width: 30%; display: none;">
 
-      <div id="conteudo1">
-        <h2>Conversor de imagens para .ICO</h2>
-<<<<<<< Updated upstream
-        <p>Aqui você converte a uma imagem para .ICO, e todo o trabalho é feito no seu própio computador, ou seja, os arquivos não saem para outro lugar, caso deseje ver o codigo ele estará todo disponibilizado em <a href="https://github.com/alessandro-jose/icovira-conversor-de-imagens-para-ico">https://github.com/alessandro-jose/icovira-conversor-de-imagens-para-ico</a> ,o conversor transforma as imagens em .ico nos seguintes formatos: PNG; JPG/JPEG; WEBP; GIF; SVG; BMP e ICO</p>
-=======
-        <p>Aqui você converte a uma imagem para .ICO, e todo o trabalho é feito no seu própio computador, ou seja, os arquivos não saem para outro lugar, caso deseje ver o codigo ele estará todo disponibilizado em <a href="https://github.com/alessandro-jose/IcoVira---Conversor-de-imagens-para-ico" target="_blank">https://github.com/alessandro-jose/IcoVira---Conversor-de-imagens-para-ico</a> ,o conversor transforma as imagens em .ico nos seguintes formatos: PNG; JPG/JPEG; WEBP; GIF; SVG; BMP e ICO</p>
->>>>>>> Stashed changes
-        <button class="button" onclick="paraoconversor()">Ir para o Conversor</button>
-      </div>
+            <svg width="30%" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" id="svg">
+              <rect x="3" y="3" width="18" height="18" rx="3" ry="3"></rect>
+              <circle cx="15.5" cy="8.5" r="1.5"></circle>
+              <polyline points="3 16 8 11 13 16"></polyline>
+              <polyline points="11 14 15 10 21 16"></polyline>
+            </svg>
 
-      <input type="file" id="realFile" accept="image/*" hidden>
+            <h2 id="fileName">Solte as imagens aqui</h2><br>
+            <span id="or">ou clique para abrir o explorador de arquivos do seu Sistema Operacional</span>
 
-      <div class="conteudo2" id="uploads" style="display: none;">
+          </div>
+        </section>
 
-      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-        <rect x="3" y="3" width="18" height="18" rx="3" ry="3"></rect>
-        <circle cx="15.5" cy="8.5" r="1.5"></circle>
-        <polyline points="3 16 8 11 13 16"></polyline>
-        <polyline points="11 14 15 10 21 16"></polyline>
-      </svg>
+        <div id="tamanho" style="display: none;">
+            <h2 class="qualtamanho">Qual tamanho que você deseja</h2>
 
- 
-        <h2>Solte as imagens aqui</h2><br>
-        <span id="fileName">ou clique para abrir o explorador de arquivos do seu Sistema Operacional</span>
-      </div>
+            <div class="tamanho">
+              <label for="width" class="pinput">Largura</label>
+              <input type="number" id="width" class="input" name="1" value="256">
+            </div>
 
-      <div id="tamanho" style="display: none;">
-        <h2 class="qualtamanho">Qual tamanho que você deseja</h2>
+            <div class="tamanho">
+              <label for="height" class="pinput">Altura</label>
+              <input type="number" id="height" class="input" name="1" value="256">
+            </div>
+          </div>
 
-        <div class="tamanho">
-          <label for="width" class="pinput">Largura</label>
-          <input type="number" id="width" class="input" name="1" value="256">
-        </div>
+        <button onclick="converter()" id="button">Gerar e Baixar .ICO</button>
+      </section>
+    </main>
 
-        <div class="tamanho">
-          <label for="height" class="pinput">Altura</label>
-          <input type="number" id="height" class="input" name="1" value="256">
-        </div>
-      </div>
-
-      <button onclick="converter()" id="button">Gerar e Baixar .ICO</button>
-
-
-    </div>
-
+    <footer>
+      <span>Copyright &copy; 2026 <a href="https://github.com/alessandro-jose" target="_blank">Alessandro José</a> &bull; <a href="https://github.com/alessandro-jose/icovira-conversor-de-imagens-para-ico/blob/main/LICENSE" target="_blank">Licenca MIT</a></span>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>

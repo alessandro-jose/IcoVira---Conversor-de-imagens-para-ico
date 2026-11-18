@@ -4,8 +4,11 @@
 
 body {
     background-color: rgba(3,18,61);
+    margin: 0px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0px 0px 10px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 body > h1, h2 {
@@ -16,31 +19,41 @@ p {
     text-indent: 10px;
 }
 
+a {
+    color: rgb(255, 255, 255);
+}
+
+a:hover {
+    color: rgba(255, 255, 255, 0.555);
+}
+
 header {
-    margin: 0px 0px 70px 0px;
+    margin: 0px;
     padding: 10px;
     display: flex;
     align-items: center;
+    font-size: 0.5em;
     background-color: rgb(1, 16, 54);
     border-radius: 0px 0px 5px 5px;
     box-shadow: 1px 0px 50px black;
+    z-index: 1;
 }
 
 #logo {
-    border-radius: 10px; 
-    width: 50px; 
+    border-radius: 5px; 
+    width: 30px; 
     margin-right: 10px;
 }
 
-    /* Remove as setinhas no Chrome, Edge e Safari */
-input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button { 
-    -webkit-appearance: none; 
-    margin: 0; 
-}
-
-/* Remove as setinhas no Firefox */
-input[type=number] {
-    -moz-appearance: textfield;
+main {
+    box-sizing: border-box;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    height: 100%;
+    width: 90%;
+    background-color: rgb(1, 16, 54);
+    box-shadow: 1px 0px 10px black;
+    margin: auto;
 }
 
 .box {
@@ -58,6 +71,13 @@ input[type=number] {
     justify-content: center;
     flex-wrap: nowrap;
     flex-direction: column;
+    max-width: 700px;
+}
+
+.box:hover {
+    transition: 0.50s;
+    scale: 1.01;
+    box-shadow: 0px 0px 50px aqua;
 }
 
 .box > #tamanho {
@@ -69,7 +89,13 @@ input[type=number] {
     margin: auto;
 }
 
+#conteudo1 > .button {
+    display: block;
+    margin: auto;
+}
+
 .conteudo2 {
+    box-sizing: border-box;
     transition: 0.50s;
     margin: 10px;
     padding: 20px;
@@ -83,10 +109,26 @@ input[type=number] {
     background-color: rgb(1, 15, 53);
 }
 
-.box:hover {
-    transition: 0.50s;
-    scale: 1.01;
-    box-shadow: 0px 0px 50px aqua;
+    /* Remove as setinhas no Chrome, Edge e Safari */
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+
+/* Remove as setinhas no Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+#imagem {
+    min-width: 10px;
+    max-width: 50px;
+    margin: auto;
+    
+}
+
+#svg {
+    min-width: 20px;
 }
 
 .button {
@@ -99,11 +141,6 @@ input[type=number] {
     background-image: radial-gradient(circle, blue, transparent);
     box-shadow: 0px 0px 50px rgb(3, 3, 104);
     cursor: pointer;
-}
-
-#conteudo1 > .button {
-    display: block;
-    margin: auto;
 }
 
 .button:hover {
@@ -159,7 +196,20 @@ input[type=number] {
     margin: 10px 5%;
 }
 
-@media screen and (max-width: 296px) {
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px;
+  background-color: rgb(1, 16, 54);
+  box-shadow: 0px 1px 50px black;
+  text-align: center;
+  margin: 0px;
+  font-size: 0.8em;
+}
+
+@media screen and (max-width: 586px) {
 
     #header {
         font-size: 0.5em;
@@ -196,5 +246,9 @@ input[type=number] {
 
     body button {
         font-size: 0.5em;
+    }
+
+    footer {
+        font-size: 0.6em;
     }
 }

@@ -23,6 +23,24 @@ realFile.addEventListener('change', () => {
     const file = realFile.files[0];
 
     if (realFile.files[0] !== undefined) {
+
+        if (!file.type.startsWith('image/')) {
+            alert('Formato inválido! Por favor, selecione apenas arquivos de imagem.');
+            realFile.value = '';
+            return;
+        }
+
+        const imagem = document.getElementById('imagem');
+        const svg = document.getElementById('svg');
+
+        // 2. Cria uma URL válida para o arquivo e define no src
+        imagem.src = URL.createObjectURL(file);
+
+        // 3. Alterna a visibilidade
+        document.getElementById('or').style.display = 'none'
+        imagem.style.display = 'block';
+        svg.style.display = 'none';
+
         if (!file.type.startsWith('image/')) {
             alert('Formato inválido! Por favor, selecione apenas arquivos de imagem.');
             realFile.value = ''; // Limpa o input
@@ -50,8 +68,8 @@ realFile.addEventListener('change', () => {
 btnUpload.addEventListener('drop', (e) => {
     e.preventDefault();
     if (e.dataTransfer.files[0]) {
-    realFile.files = e.dataTransfer.files;
-    realFile.dispatchEvent(new Event('change')); // Dispara o código acima automaticamente
+        realFile.files = e.dataTransfer.files;
+        realFile.dispatchEvent(new Event('change')); // Dispara o código acima automaticamente
     }
 });
 
