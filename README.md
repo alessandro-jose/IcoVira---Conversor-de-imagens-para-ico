@@ -2,7 +2,7 @@
 
 Um conversor de imagens para `.ico` simples, rápido e 100% online. Toda a conversão é feita localmente no seu próprio navegador, sem enviar seus arquivos para nenhum servidor.
 
-🔗 **Acesse o site aqui:** <a href="https://alessandro-jose.github.io/IcoVira---Conversor-de-imagens-para-ico/">https://alessandro-jose.github.io/IcoVira---Conversor-de-imagens-para-ico/</a>
+🔗 **Acesse o site aqui:** <a href="https://alessandro-jose.github.io/icovira-conversor-de-imagens-para-ico/">https://alessandro-jose.github.io/icovira-conversor-de-imagens-para-ico/</a>
 
 ---
 
